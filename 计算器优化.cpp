@@ -18,7 +18,7 @@ int div(int x, int y)
 		return x / y;
 	else
 	{
-		printf("³ıÊı²»ÄÜÎª0\n");
+		printf("é™¤æ•°ä¸èƒ½ä¸º0\n");
 		return 0;
 	}
 }
@@ -26,9 +26,9 @@ int div(int x, int y)
 void CD()
 {
 	printf("********************\n");
-	printf("**  1:¼Ó   2:¼õ   **\n");
-	printf("**  3:³Ë   4:³ı   **\n");
-	printf("****   0£ºerc  *****\n");
+	printf("**  1:åŠ    2:å‡   **\n");
+	printf("**  3:ä¹˜   4:é™¤   **\n");
+	printf("****   0ï¼šerc  *****\n");
 	printf("********************\n");
 }
 
@@ -36,27 +36,27 @@ int main()
 {
 	int x = 0, y = 0, ret = 0;
 	int input = 0;
-	int(*arr[])(int, int) = { 0,add,sub,mul,div };
+	int(*arr[])(int, int) = { 0,add,sub,mul,div };       // æŒ‡å‘å‡½æ•°æŒ‡é’ˆæ•°ç»„çš„æŒ‡é’ˆ
 	
 	do
 	{
 		CD();
-		printf("ÇëÑ¡Ôñ¹¦ÄÜ\n");
+		printf("è¯·é€‰æ‹©åŠŸèƒ½\n");
 		scanf("%d", &input);
 		if (input >= 1 && input <= 4)
 		{
-			printf("ÇëÊäÁ½¸ö²ÎÊı\n");
+			printf("è¯·è¾“ä¸¤ä¸ªå‚æ•°\n");
 			scanf("%d%d", &x, &y);
 			ret = arr[input](x, y);
 			printf("%d\n", ret);
 		}
 		else if (input == 0)
 		{
-			printf("ÍË³ö³ÌĞò\n");
+			printf("é€€å‡ºç¨‹åº\n");
 		}
 		else
 		{
-			printf("Ñ¡Ôñ´íÎóÖØĞÂÑ¡Ôñ\n");
+			printf("é€‰æ‹©é”™è¯¯é‡æ–°é€‰æ‹©\n");
 		}
 	} while (input);
 	return 0;
