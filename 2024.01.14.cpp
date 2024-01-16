@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 //把一个字符串逆序
-/*
+
 void nx(char* arr)
 {
 	char* z = arr;
@@ -26,10 +26,10 @@ int main()
 		printf("%c ", arr[i]);
 	}
 	return 0;
-}*/
+}
 
 // 求Sn=a+aa+aaa+aaaaa的前五项之和 a 是一个数字
-/*
+
 int main()
 {
 	int a = 0, n = 0;
@@ -43,11 +43,11 @@ int main()
 	}
 	printf("%d", sum);
 	return 0;
-}*/
+}
 
 // 求 0-100000 的所有自幂数并打印；153  1 27 
 #include <math.h>
-/*
+
 int main()
 {
 	int i = 0;
@@ -76,10 +76,10 @@ int main()
 		}
 	}
 	return 0;
-}*/
+}
 
 // 打印一个菱形
-/*
+
 int main()
 {
 	int a = 0;
@@ -117,36 +117,36 @@ int main()
 		printf("输入错误");
 	}
 	return 0;
-}*/
+}
 
 // 一瓶汽水 1块钱 2个空瓶可以换1瓶汽水，给20块 可以喝多少瓶；
 
-//int main()
-//{
-//	int qian = 0;
-//	int kq = 0;
-//	int sum = 0;
-//	scanf("%d", &qian);
-// if(qian>0)
-// {
-//		sum=2*qian-1;
-// }
-// 
-//	//买回来喝掉
-//	sum = qian;
-//	kq = qian;
-//	//空瓶兑换
-//	while (kq>=2)
-//	{
-//		sum += kq / 2;
-//		kq = kq / 2 + kq % 2;
-//	}
-//	printf("%d", sum);
-//	return 0;
-//}
+int main()
+{
+    int qian = 0;
+    int kq = 0;
+    int sum = 0;
+    scanf("%d", &qian);
+    if(qian>0)
+    {
+	sum=2*qian-1;
+ }
+ 
+	//买回来喝掉
+	sum = qian;
+	kq = qian;
+	//空瓶兑换
+	while (kq>=2)
+	{
+		sum += kq / 2;
+		kq = kq / 2 + kq % 2;
+	}
+	printf("%d", sum);
+	return 0;
+}
 
 // 给定一个数组把数组的内容改为奇数在一起 偶数在一起
-/*
+
 void move(int arr[], int sz)
 {
 	int left = 0;
@@ -187,10 +187,10 @@ int main()
 	print(arr,sz);
 	//printf("%d", 4 % 2);
 	return 0;
-}*/
+}
 
 // 打印一个菱形
-/*
+
 int main()
 {
 	int a = 0;
@@ -229,10 +229,10 @@ int main()
 		printf("输入错误");
 	}
 	return 0;
-}*/
+}
 
 // qsort 模拟实现
-/*
+
 typedef struct xx
 {
 	char name[50];
@@ -278,7 +278,7 @@ void my_qsort(void* arr, int sz, int width, int (*cmp)(void* s1, void* s2))
 	}
 }
 int main()
-{/*
+{
 	int arr[] = { 10,9,8,7,6,5,4,3,2,1,0 };
 	int sz = sizeof(arr) / sizeof(arr[0]);
 	my_qsort(arr, sz, sizeof(arr[0]), my_tmp_int);
@@ -294,11 +294,11 @@ int main()
 		printf("%s ", s[i].name);
 	}
 	return 0;
-}*/
+}
 
 // 向左旋转 k 次字符串
 #include <assert.h>
-/*
+
 void xz(char* arr, int sz,int b)
 {
 	assert(arr);  断言 判断字符的有效性 
@@ -349,13 +349,13 @@ void xz(char* arr, int a)
 	nx(arr+a,arr+len-1);//逆序第二部
 	nx(arr,arr+len-1);//逆序第三步
 }
-//int main()
-//{
-//	char arr[] = "abcdef";
-//	xz(arr,3);
-//	printf("%s", arr);
-//	return 0;
-//}
+int main()
+{
+	char arr[] = "abcdef";
+	xz(arr,3);
+	printf("%s", arr);
+	return 0;
+}
 
 // 写一个函数判断判断 arr1 是不是由 arr旋转得来
 
